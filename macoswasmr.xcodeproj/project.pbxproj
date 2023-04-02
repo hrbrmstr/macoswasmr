@@ -11,7 +11,6 @@
 		0112442527C7DD1E006498D4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0112442427C7DD1E006498D4 /* ContentView.swift */; };
 		0112442727C7DD1F006498D4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0112442627C7DD1F006498D4 /* Assets.xcassets */; };
 		0112442A27C7DD1F006498D4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0112442927C7DD1F006498D4 /* Preview Assets.xcassets */; };
-		0112443227C7DE97006498D4 /* goserve-macos in Resources */ = {isa = PBXBuildFile; fileRef = 0112443127C7DE97006498D4 /* goserve-macos */; };
 		0127CBB829D983A9003433DB /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = 0127CBA029D98398003433DB /* index.html */; };
 		0127CBB929D983A9003433DB /* R.bin.js in Resources */ = {isa = PBXBuildFile; fileRef = 0127CBA129D98399003433DB /* R.bin.js */; };
 		0127CBBA29D983A9003433DB /* repl.mjs in Resources */ = {isa = PBXBuildFile; fileRef = 0127CBA329D9839B003433DB /* repl.mjs */; };
@@ -26,7 +25,11 @@
 		0127CBC629D983A9003433DB /* libRblas.so in Resources */ = {isa = PBXBuildFile; fileRef = 0127CBB429D983A6003433DB /* libRblas.so */; };
 		0127CBC729D983A9003433DB /* R.bin.data in Resources */ = {isa = PBXBuildFile; fileRef = 0127CBB529D983A7003433DB /* R.bin.data */; };
 		0127CBC829D983A9003433DB /* webr-serviceworker.js in Resources */ = {isa = PBXBuildFile; fileRef = 0127CBB629D983A8003433DB /* webr-serviceworker.js */; };
-		017FD27029D9810400BB3BE7 /* goserve.conf in Resources */ = {isa = PBXBuildFile; fileRef = 017FD26F29D9810400BB3BE7 /* goserve.conf */; };
+		0158450229D9D59F00485FEE /* Telegraph in Frameworks */ = {isa = PBXBuildFile; productRef = 0158450129D9D59F00485FEE /* Telegraph */; };
+		0158450429D9D92400485FEE /* test.html in Resources */ = {isa = PBXBuildFile; fileRef = 0158450329D9D92400485FEE /* test.html */; };
+		0158450629D9DABB00485FEE /* index.css in Resources */ = {isa = PBXBuildFile; fileRef = 0158450529D9DABB00485FEE /* index.css */; };
+		0158450829D9DD2600485FEE /* w.js in Resources */ = {isa = PBXBuildFile; fileRef = 0158450729D9DD2600485FEE /* w.js */; };
+		016571CA29D9E68C0027AA5E /* webr-demo.html in Resources */ = {isa = PBXBuildFile; fileRef = 016571C929D9E68C0027AA5E /* webr-demo.html */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,7 +39,6 @@
 		0112442627C7DD1F006498D4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0112442927C7DD1F006498D4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		0112442B27C7DD1F006498D4 /* macoswasmr.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macoswasmr.entitlements; sourceTree = "<group>"; };
-		0112443127C7DE97006498D4 /* goserve-macos */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = "goserve-macos"; sourceTree = "<group>"; };
 		0112443327C7E211006498D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		0127CBA029D98398003433DB /* index.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
 		0127CBA129D98399003433DB /* R.bin.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = R.bin.js; sourceTree = "<group>"; };
@@ -60,7 +62,10 @@
 		0127CBB729D983A9003433DB /* webr-serviceworker.js.map */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = "webr-serviceworker.js.map"; sourceTree = "<group>"; };
 		0127CBCA29D98E79003433DB /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
 		0127CBCB29D9AA58003433DB /* LICENSE.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = LICENSE.md; sourceTree = SOURCE_ROOT; };
-		017FD26F29D9810400BB3BE7 /* goserve.conf */ = {isa = PBXFileReference; lastKnownFileType = text; path = goserve.conf; sourceTree = "<group>"; };
+		0158450329D9D92400485FEE /* test.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = test.html; sourceTree = "<group>"; };
+		0158450529D9DABB00485FEE /* index.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = index.css; sourceTree = "<group>"; };
+		0158450729D9DD2600485FEE /* w.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = w.js; sourceTree = "<group>"; };
+		016571C929D9E68C0027AA5E /* webr-demo.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "webr-demo.html"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +73,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0158450229D9D59F00485FEE /* Telegraph in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -96,10 +102,8 @@
 				0127CBC929D98C2B003433DB /* webr */,
 				0127CBAC29D983A2003433DB /* assets */,
 				0112443327C7E211006498D4 /* Info.plist */,
-				0112443127C7DE97006498D4 /* goserve-macos */,
 				0112442227C7DD1E006498D4 /* macoswasmrApp.swift */,
 				0112442427C7DD1E006498D4 /* ContentView.swift */,
-				017FD26F29D9810400BB3BE7 /* goserve.conf */,
 				0112442627C7DD1F006498D4 /* Assets.xcassets */,
 				0112442B27C7DD1F006498D4 /* macoswasmr.entitlements */,
 				0127CBCA29D98E79003433DB /* README.md */,
@@ -127,6 +131,7 @@
 		0127CBC929D98C2B003433DB /* webr */ = {
 			isa = PBXGroup;
 			children = (
+				016571C929D9E68C0027AA5E /* webr-demo.html */,
 				0127CBA829D9839F003433DB /* console.html */,
 				0127CBB129D983A4003433DB /* console.mjs */,
 				0127CBAA29D983A0003433DB /* console.mjs.map */,
@@ -147,6 +152,9 @@
 				0127CBA529D9839C003433DB /* webr-worker.js.map */,
 				0127CBAB29D983A1003433DB /* webr.mjs */,
 				0127CBA929D983A0003433DB /* webr.mjs.map */,
+				0158450329D9D92400485FEE /* test.html */,
+				0158450529D9DABB00485FEE /* index.css */,
+				0158450729D9DD2600485FEE /* w.js */,
 			);
 			path = webr;
 			sourceTree = "<group>";
@@ -167,6 +175,9 @@
 			dependencies = (
 			);
 			name = macoswasmr;
+			packageProductDependencies = (
+				0158450129D9D59F00485FEE /* Telegraph */,
+			);
 			productName = macoswasmr;
 			productReference = 0112441F27C7DD1E006498D4 /* macoswasmr.app */;
 			productType = "com.apple.product-type.application";
@@ -195,6 +206,9 @@
 				Base,
 			);
 			mainGroup = 0112441627C7DD1E006498D4;
+			packageReferences = (
+				0158450029D9D59F00485FEE /* XCRemoteSwiftPackageReference "Telegraph" */,
+			);
 			productRefGroup = 0112442027C7DD1E006498D4 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -217,16 +231,18 @@
 				0127CBB929D983A9003433DB /* R.bin.js in Resources */,
 				0127CBB829D983A9003433DB /* index.html in Resources */,
 				0127CBC329D983A9003433DB /* console.mjs in Resources */,
+				0158450629D9DABB00485FEE /* index.css in Resources */,
+				0158450429D9D92400485FEE /* test.html in Resources */,
 				0127CBC829D983A9003433DB /* webr-serviceworker.js in Resources */,
+				016571CA29D9E68C0027AA5E /* webr-demo.html in Resources */,
 				0127CBC629D983A9003433DB /* libRblas.so in Resources */,
 				0127CBBF29D983A9003433DB /* webr.mjs in Resources */,
 				0127CBBC29D983A9003433DB /* libRlapack.so in Resources */,
 				0112442A27C7DD1F006498D4 /* Preview Assets.xcassets in Resources */,
+				0158450829D9DD2600485FEE /* w.js in Resources */,
 				0127CBBE29D983A9003433DB /* console.html in Resources */,
 				0127CBBD29D983A9003433DB /* repl.css in Resources */,
-				017FD27029D9810400BB3BE7 /* goserve.conf in Resources */,
 				0112442727C7DD1F006498D4 /* Assets.xcassets in Resources */,
-				0112443227C7DE97006498D4 /* goserve-macos in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -440,6 +456,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		0158450029D9D59F00485FEE /* XCRemoteSwiftPackageReference "Telegraph" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Building42/Telegraph.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.30.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		0158450129D9D59F00485FEE /* Telegraph */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0158450029D9D59F00485FEE /* XCRemoteSwiftPackageReference "Telegraph" */;
+			productName = Telegraph;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 0112441727C7DD1E006498D4 /* Project object */;
 }

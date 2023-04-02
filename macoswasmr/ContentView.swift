@@ -1,47 +1,7 @@
 import SwiftUI
 import WebKit
 import Combine
-
-// This is where we:
-//
-// - launch goserve in the background
-//   - tell it to use "goserve.conf" which has the necessary CORS headers configured
-//   
-class AppModel: NSObject, ObservableObject {
-  
-  @Published var task: Process?
-  @Published var outputPipe = Pipe()
-  @Published var errorPipe = Pipe()
-
-  override init() {
-    
-    super.init()
-
-    self.task = Process()
-    
-    self.task?.executableURL = Bundle.main.url(forAuxiliaryExecutable: "Resources/goserve-macos")!
-    self.task?.arguments = [
-      Bundle.main.path(forAuxiliaryExecutable: "Resources")!
-    ]
-    
-    self.task?.standardOutput = outputPipe
-    self.task?.standardError = errorPipe
-    
-    do {
-      try self.task?.run()
-    } catch {
-      print("task did not run")
-    }
-    
-    print("task run")
-    
-  }
-  
-  deinit {
-    self.task?.terminate()
-  }
-
-}
+import Telegraph
 
 // This is the model for the WebView (below)
 class WebViewModel: ObservableObject {
@@ -55,6 +15,23 @@ class WebViewModel: ObservableObject {
   }
 }
 
+public class InsertHeadersHandler: HTTPRequestHandler {
+  public func respond(to request: HTTPRequest, nextHandler: HTTPRequest.Handler) throws -> HTTPResponse? {
+    
+    //  Let the other handlers create a response
+    let response = try nextHandler(request)
+    
+    // Add our own bit of magic
+    response?.headers["Cross-Origin-Embedder-Policy"] = "require-corp"
+    response?.headers["Cross-Origin-Opener-Policy"] = "same-origin"
+    response?.headers["Cross-Origin-Resource-Policy"] = "cross-origin"
+    
+    debugPrint("WEBR: \(response?.headers)")
+    return response
+    
+  }
+}
+
 // I so hate boilerplate code in macOS apps
 //
 // This is the actual WebView that does the work where we'll load up the index.html for the REPL
@@ -63,12 +40,16 @@ struct SwiftUIWebView: NSViewRepresentable {
   
   public typealias NSViewType = WKWebView
   @ObservedObject var viewModel: WebViewModel
-  
+
   private let webView: WKWebView = WKWebView()
+  
   public func makeNSView(context: NSViewRepresentableContext<SwiftUIWebView>) -> WKWebView {
+    
+//    telegraph.serveDirectory(Bundle.main.url(forAuxiliaryExecutable: "Resources")!)
+    
     webView.navigationDelegate = context.coordinator
     webView.uiDelegate = context.coordinator as? WKUIDelegate
-    webView.load(URLRequest(url: URL(string: viewModel.link)!))
+    webView.load(URLRequest(url: URL(string: viewModel.link)!, cachePolicy: .reloadIgnoringLocalCacheData))
     return webView
   }
   
@@ -131,48 +112,27 @@ struct WebRWebView: View {
 // to sort of prove it's running in an app for screenshots.
 struct ContentView: View {
   
-  @ObservedObject var m = AppModel()
-  @State var outputText: String = ""
-  @State var errorText: String = ""
-
+  private let telegraph = Server()
+  
   var body: some View {
     VStack {
       Text("Local webR inside a macOS app and a custom WebView")
         .padding()
-      Text(outputText)
-//      Text(errorText)
-      WebRWebView(mesgURL: "http://localhost:9081")
+      WebRWebView(mesgURL: "http://localhost:9082/webr-demo.html")
+//      WebRWebView(mesgURL: "http://localhost:9082/index.html")
     }.onAppear {
-      // Start reading from the output pipe (debug only)
-      startReadingOutput()
-      NotificationCenter.default.addObserver(forName: NSApplication.willTerminateNotification, object: nil, queue: nil) { _ in
-        m.task?.terminate()
+      
+      telegraph.serveBundle(.main)
+      telegraph.httpConfig.requestHandlers.insert(InsertHeadersHandler(), at: 0)
+      telegraph.concurrency = 4
+      
+      do {
+        try telegraph.start(port: 9082)
+      } catch let error {
+        print("Error starting server: \(error.localizedDescription)")
       }
-    }
-  }
-  
-  func startReadingOutput() {
-    
-    let outputHandler = m.outputPipe.fileHandleForReading
-    outputHandler.readabilityHandler = { pipe in
-      if let output = String(data: pipe.availableData, encoding: .utf8) {
-        // Update the output text on the main thread
-        DispatchQueue.main.async {
-          outputText += output
-        }
-      }
-    }
-    
-    let errorHandler = m.errorPipe.fileHandleForReading
-    errorHandler.readabilityHandler = { pipe in
-      if let output = String(data: pipe.availableData, encoding: .utf8) {
-        // Update the output text on the main thread
-        DispatchQueue.main.async {
-          errorText += output
-        }
-      }
-    }
 
+    }
   }
   
 }

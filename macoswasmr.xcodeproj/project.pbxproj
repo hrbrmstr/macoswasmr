@@ -59,6 +59,7 @@
 		0127CBB629D983A8003433DB /* webr-serviceworker.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "webr-serviceworker.js"; sourceTree = "<group>"; };
 		0127CBB729D983A9003433DB /* webr-serviceworker.js.map */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = "webr-serviceworker.js.map"; sourceTree = "<group>"; };
 		0127CBCA29D98E79003433DB /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
+		0127CBCB29D9AA58003433DB /* LICENSE.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = LICENSE.md; sourceTree = SOURCE_ROOT; };
 		017FD26F29D9810400BB3BE7 /* goserve.conf */ = {isa = PBXFileReference; lastKnownFileType = text; path = goserve.conf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -103,6 +104,7 @@
 				0112442B27C7DD1F006498D4 /* macoswasmr.entitlements */,
 				0127CBCA29D98E79003433DB /* README.md */,
 				0112442827C7DD1F006498D4 /* Preview Content */,
+				0127CBCB29D9AA58003433DB /* LICENSE.md */,
 			);
 			path = macoswasmr;
 			sourceTree = "<group>";

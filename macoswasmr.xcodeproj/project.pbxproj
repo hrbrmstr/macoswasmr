@@ -1,0 +1,455 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0112442327C7DD1E006498D4 /* macoswasmrApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0112442227C7DD1E006498D4 /* macoswasmrApp.swift */; };
+		0112442527C7DD1E006498D4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0112442427C7DD1E006498D4 /* ContentView.swift */; };
+		0112442727C7DD1F006498D4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0112442627C7DD1F006498D4 /* Assets.xcassets */; };
+		0112442A27C7DD1F006498D4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0112442927C7DD1F006498D4 /* Preview Assets.xcassets */; };
+		0112443227C7DE97006498D4 /* goserve-macos in Resources */ = {isa = PBXBuildFile; fileRef = 0112443127C7DE97006498D4 /* goserve-macos */; };
+		0127CBB829D983A9003433DB /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = 0127CBA029D98398003433DB /* index.html */; };
+		0127CBB929D983A9003433DB /* R.bin.js in Resources */ = {isa = PBXBuildFile; fileRef = 0127CBA129D98399003433DB /* R.bin.js */; };
+		0127CBBA29D983A9003433DB /* repl.mjs in Resources */ = {isa = PBXBuildFile; fileRef = 0127CBA329D9839B003433DB /* repl.mjs */; };
+		0127CBBB29D983A9003433DB /* webr-worker.js in Resources */ = {isa = PBXBuildFile; fileRef = 0127CBA429D9839C003433DB /* webr-worker.js */; };
+		0127CBBC29D983A9003433DB /* libRlapack.so in Resources */ = {isa = PBXBuildFile; fileRef = 0127CBA629D9839D003433DB /* libRlapack.so */; };
+		0127CBBD29D983A9003433DB /* repl.css in Resources */ = {isa = PBXBuildFile; fileRef = 0127CBA729D9839E003433DB /* repl.css */; };
+		0127CBBE29D983A9003433DB /* console.html in Resources */ = {isa = PBXBuildFile; fileRef = 0127CBA829D9839F003433DB /* console.html */; };
+		0127CBBF29D983A9003433DB /* webr.mjs in Resources */ = {isa = PBXBuildFile; fileRef = 0127CBAB29D983A1003433DB /* webr.mjs */; };
+		0127CBC029D983A9003433DB /* throbber-5JVYEP25.gif in Resources */ = {isa = PBXBuildFile; fileRef = 0127CBAD29D983A2003433DB /* throbber-5JVYEP25.gif */; };
+		0127CBC129D983A9003433DB /* 40px-44FTTWYD.png in Resources */ = {isa = PBXBuildFile; fileRef = 0127CBAE29D983A2003433DB /* 40px-44FTTWYD.png */; };
+		0127CBC229D983A9003433DB /* 32px-CIESY7CE.png in Resources */ = {isa = PBXBuildFile; fileRef = 0127CBAF29D983A2003433DB /* 32px-CIESY7CE.png */; };
+		0127CBC329D983A9003433DB /* console.mjs in Resources */ = {isa = PBXBuildFile; fileRef = 0127CBB129D983A4003433DB /* console.mjs */; };
+		0127CBC429D983A9003433DB /* repl.html in Resources */ = {isa = PBXBuildFile; fileRef = 0127CBB229D983A4003433DB /* repl.html */; };
+		0127CBC529D983A9003433DB /* R.bin.wasm in Resources */ = {isa = PBXBuildFile; fileRef = 0127CBB329D983A5003433DB /* R.bin.wasm */; };
+		0127CBC629D983A9003433DB /* libRblas.so in Resources */ = {isa = PBXBuildFile; fileRef = 0127CBB429D983A6003433DB /* libRblas.so */; };
+		0127CBC729D983A9003433DB /* R.bin.data in Resources */ = {isa = PBXBuildFile; fileRef = 0127CBB529D983A7003433DB /* R.bin.data */; };
+		0127CBC829D983A9003433DB /* webr-serviceworker.js in Resources */ = {isa = PBXBuildFile; fileRef = 0127CBB629D983A8003433DB /* webr-serviceworker.js */; };
+		017FD27029D9810400BB3BE7 /* goserve.conf in Resources */ = {isa = PBXBuildFile; fileRef = 017FD26F29D9810400BB3BE7 /* goserve.conf */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0112441F27C7DD1E006498D4 /* macoswasmr.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = macoswasmr.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0112442227C7DD1E006498D4 /* macoswasmrApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = macoswasmrApp.swift; sourceTree = "<group>"; };
+		0112442427C7DD1E006498D4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		0112442627C7DD1F006498D4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0112442927C7DD1F006498D4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		0112442B27C7DD1F006498D4 /* macoswasmr.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macoswasmr.entitlements; sourceTree = "<group>"; };
+		0112443127C7DE97006498D4 /* goserve-macos */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = "goserve-macos"; sourceTree = "<group>"; };
+		0112443327C7E211006498D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		0127CBA029D98398003433DB /* index.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
+		0127CBA129D98399003433DB /* R.bin.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = R.bin.js; sourceTree = "<group>"; };
+		0127CBA229D9839A003433DB /* repl.css.map */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = repl.css.map; sourceTree = "<group>"; };
+		0127CBA329D9839B003433DB /* repl.mjs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = repl.mjs; sourceTree = "<group>"; };
+		0127CBA429D9839C003433DB /* webr-worker.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "webr-worker.js"; sourceTree = "<group>"; };
+		0127CBA529D9839C003433DB /* webr-worker.js.map */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = "webr-worker.js.map"; sourceTree = "<group>"; };
+		0127CBA629D9839D003433DB /* libRlapack.so */ = {isa = PBXFileReference; lastKnownFileType = file; path = libRlapack.so; sourceTree = "<group>"; };
+		0127CBA729D9839E003433DB /* repl.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = repl.css; sourceTree = "<group>"; };
+		0127CBA829D9839F003433DB /* console.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = console.html; sourceTree = "<group>"; };
+		0127CBA929D983A0003433DB /* webr.mjs.map */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = webr.mjs.map; sourceTree = "<group>"; };
+		0127CBAA29D983A0003433DB /* console.mjs.map */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = console.mjs.map; sourceTree = "<group>"; };
+		0127CBAB29D983A1003433DB /* webr.mjs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = webr.mjs; sourceTree = "<group>"; };
+		0127CBAD29D983A2003433DB /* throbber-5JVYEP25.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "throbber-5JVYEP25.gif"; sourceTree = "<group>"; };
+		0127CBAE29D983A2003433DB /* 40px-44FTTWYD.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "40px-44FTTWYD.png"; sourceTree = "<group>"; };
+		0127CBAF29D983A2003433DB /* 32px-CIESY7CE.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "32px-CIESY7CE.png"; sourceTree = "<group>"; };
+		0127CBB029D983A3003433DB /* repl.mjs.map */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = repl.mjs.map; sourceTree = "<group>"; };
+		0127CBB129D983A4003433DB /* console.mjs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = console.mjs; sourceTree = "<group>"; };
+		0127CBB229D983A4003433DB /* repl.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = repl.html; sourceTree = "<group>"; };
+		0127CBB329D983A5003433DB /* R.bin.wasm */ = {isa = PBXFileReference; lastKnownFileType = file; path = R.bin.wasm; sourceTree = "<group>"; };
+		0127CBB429D983A6003433DB /* libRblas.so */ = {isa = PBXFileReference; lastKnownFileType = file; path = libRblas.so; sourceTree = "<group>"; };
+		0127CBB529D983A7003433DB /* R.bin.data */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = R.bin.data; sourceTree = "<group>"; };
+		0127CBB629D983A8003433DB /* webr-serviceworker.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "webr-serviceworker.js"; sourceTree = "<group>"; };
+		0127CBB729D983A9003433DB /* webr-serviceworker.js.map */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = "webr-serviceworker.js.map"; sourceTree = "<group>"; };
+		0127CBCA29D98E79003433DB /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
+		017FD26F29D9810400BB3BE7 /* goserve.conf */ = {isa = PBXFileReference; lastKnownFileType = text; path = goserve.conf; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0112441C27C7DD1E006498D4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0112441627C7DD1E006498D4 = {
+			isa = PBXGroup;
+			children = (
+				0112442127C7DD1E006498D4 /* macoswasmr */,
+				0112442027C7DD1E006498D4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0112442027C7DD1E006498D4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0112441F27C7DD1E006498D4 /* macoswasmr.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0112442127C7DD1E006498D4 /* macoswasmr */ = {
+			isa = PBXGroup;
+			children = (
+				0127CBC929D98C2B003433DB /* webr */,
+				0127CBAC29D983A2003433DB /* assets */,
+				0112443327C7E211006498D4 /* Info.plist */,
+				0112443127C7DE97006498D4 /* goserve-macos */,
+				0112442227C7DD1E006498D4 /* macoswasmrApp.swift */,
+				0112442427C7DD1E006498D4 /* ContentView.swift */,
+				017FD26F29D9810400BB3BE7 /* goserve.conf */,
+				0112442627C7DD1F006498D4 /* Assets.xcassets */,
+				0112442B27C7DD1F006498D4 /* macoswasmr.entitlements */,
+				0127CBCA29D98E79003433DB /* README.md */,
+				0112442827C7DD1F006498D4 /* Preview Content */,
+			);
+			path = macoswasmr;
+			sourceTree = "<group>";
+		};
+		0112442827C7DD1F006498D4 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				0112442927C7DD1F006498D4 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		0127CBAC29D983A2003433DB /* assets */ = {
+			isa = PBXGroup;
+			children = (
+				0127CBAD29D983A2003433DB /* throbber-5JVYEP25.gif */,
+				0127CBAE29D983A2003433DB /* 40px-44FTTWYD.png */,
+				0127CBAF29D983A2003433DB /* 32px-CIESY7CE.png */,
+			);
+			path = assets;
+			sourceTree = "<group>";
+		};
+		0127CBC929D98C2B003433DB /* webr */ = {
+			isa = PBXGroup;
+			children = (
+				0127CBA829D9839F003433DB /* console.html */,
+				0127CBB129D983A4003433DB /* console.mjs */,
+				0127CBAA29D983A0003433DB /* console.mjs.map */,
+				0127CBA029D98398003433DB /* index.html */,
+				0127CBB429D983A6003433DB /* libRblas.so */,
+				0127CBA629D9839D003433DB /* libRlapack.so */,
+				0127CBB529D983A7003433DB /* R.bin.data */,
+				0127CBA129D98399003433DB /* R.bin.js */,
+				0127CBB329D983A5003433DB /* R.bin.wasm */,
+				0127CBA729D9839E003433DB /* repl.css */,
+				0127CBA229D9839A003433DB /* repl.css.map */,
+				0127CBB229D983A4003433DB /* repl.html */,
+				0127CBA329D9839B003433DB /* repl.mjs */,
+				0127CBB029D983A3003433DB /* repl.mjs.map */,
+				0127CBB629D983A8003433DB /* webr-serviceworker.js */,
+				0127CBB729D983A9003433DB /* webr-serviceworker.js.map */,
+				0127CBA429D9839C003433DB /* webr-worker.js */,
+				0127CBA529D9839C003433DB /* webr-worker.js.map */,
+				0127CBAB29D983A1003433DB /* webr.mjs */,
+				0127CBA929D983A0003433DB /* webr.mjs.map */,
+			);
+			path = webr;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0112441E27C7DD1E006498D4 /* macoswasmr */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0112442E27C7DD1F006498D4 /* Build configuration list for PBXNativeTarget "macoswasmr" */;
+			buildPhases = (
+				0112441B27C7DD1E006498D4 /* Sources */,
+				0112441C27C7DD1E006498D4 /* Frameworks */,
+				0112441D27C7DD1E006498D4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = macoswasmr;
+			productName = macoswasmr;
+			productReference = 0112441F27C7DD1E006498D4 /* macoswasmr.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0112441727C7DD1E006498D4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1330;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					0112441E27C7DD1E006498D4 = {
+						CreatedOnToolsVersion = 13.3;
+					};
+				};
+			};
+			buildConfigurationList = 0112441A27C7DD1E006498D4 /* Build configuration list for PBXProject "macoswasmr" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0112441627C7DD1E006498D4;
+			productRefGroup = 0112442027C7DD1E006498D4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0112441E27C7DD1E006498D4 /* macoswasmr */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0112441D27C7DD1E006498D4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0127CBBB29D983A9003433DB /* webr-worker.js in Resources */,
+				0127CBC129D983A9003433DB /* 40px-44FTTWYD.png in Resources */,
+				0127CBC229D983A9003433DB /* 32px-CIESY7CE.png in Resources */,
+				0127CBC729D983A9003433DB /* R.bin.data in Resources */,
+				0127CBC529D983A9003433DB /* R.bin.wasm in Resources */,
+				0127CBBA29D983A9003433DB /* repl.mjs in Resources */,
+				0127CBC429D983A9003433DB /* repl.html in Resources */,
+				0127CBB929D983A9003433DB /* R.bin.js in Resources */,
+				0127CBB829D983A9003433DB /* index.html in Resources */,
+				0127CBC329D983A9003433DB /* console.mjs in Resources */,
+				0127CBC829D983A9003433DB /* webr-serviceworker.js in Resources */,
+				0127CBC629D983A9003433DB /* libRblas.so in Resources */,
+				0127CBBF29D983A9003433DB /* webr.mjs in Resources */,
+				0127CBBC29D983A9003433DB /* libRlapack.so in Resources */,
+				0112442A27C7DD1F006498D4 /* Preview Assets.xcassets in Resources */,
+				0127CBBE29D983A9003433DB /* console.html in Resources */,
+				0127CBBD29D983A9003433DB /* repl.css in Resources */,
+				017FD27029D9810400BB3BE7 /* goserve.conf in Resources */,
+				0112442727C7DD1F006498D4 /* Assets.xcassets in Resources */,
+				0112443227C7DE97006498D4 /* goserve-macos in Resources */,
+				0127CBC029D983A9003433DB /* throbber-5JVYEP25.gif in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0112441B27C7DD1E006498D4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0112442527C7DD1E006498D4 /* ContentView.swift in Sources */,
+				0112442327C7DD1E006498D4 /* macoswasmrApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		0112442C27C7DD1F006498D4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		0112442D27C7DD1F006498D4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		0112442F27C7DD1F006498D4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = macoswasmr/macoswasmr.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_ASSET_PATHS = "\"macoswasmr/Preview Content\"";
+				DEVELOPMENT_TEAM = CBY22P58G8;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = macoswasmr/Info.plist;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = is.rud.macoswasmr;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		0112443027C7DD1F006498D4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = macoswasmr/macoswasmr.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_ASSET_PATHS = "\"macoswasmr/Preview Content\"";
+				DEVELOPMENT_TEAM = CBY22P58G8;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = macoswasmr/Info.plist;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = is.rud.macoswasmr;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0112441A27C7DD1E006498D4 /* Build configuration list for PBXProject "macoswasmr" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0112442C27C7DD1F006498D4 /* Debug */,
+				0112442D27C7DD1F006498D4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0112442E27C7DD1F006498D4 /* Build configuration list for PBXNativeTarget "macoswasmr" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0112442F27C7DD1F006498D4 /* Debug */,
+				0112443027C7DD1F006498D4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0112441727C7DD1E006498D4 /* Project object */;
+}

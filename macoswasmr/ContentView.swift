@@ -10,9 +10,8 @@ import Combine
 class AppModel: NSObject, ObservableObject {
   
   @Published var task: Process?
-  
-  let outputPipe = Pipe()
-  let errorPipe = Pipe()
+  @Published var outputPipe = Pipe()
+  @Published var errorPipe = Pipe()
 
   override init() {
     
@@ -22,7 +21,6 @@ class AppModel: NSObject, ObservableObject {
     
     self.task?.executableURL = Bundle.main.url(forAuxiliaryExecutable: "Resources/goserve-macos")!
     self.task?.arguments = [
-      "-config='" + Bundle.main.path(forAuxiliaryExecutable: "Resources/goserve.conf")! + "'",
       Bundle.main.path(forAuxiliaryExecutable: "Resources")!
     ]
     
@@ -134,11 +132,47 @@ struct WebRWebView: View {
 struct ContentView: View {
   
   @ObservedObject var m = AppModel()
+  @State var outputText: String = ""
+  @State var errorText: String = ""
 
   var body: some View {
-    Text("Local webR inside a macOS app and a custom WebView")
-      .padding()
-    WebRWebView(mesgURL: "http://localhost:9081")
+    VStack {
+      Text("Local webR inside a macOS app and a custom WebView")
+        .padding()
+      Text(outputText)
+//      Text(errorText)
+      WebRWebView(mesgURL: "http://localhost:9081")
+    }.onAppear {
+      // Start reading from the output pipe (debug only)
+      startReadingOutput()
+      NotificationCenter.default.addObserver(forName: NSApplication.willTerminateNotification, object: nil, queue: nil) { _ in
+        m.task?.terminate()
+      }
+    }
+  }
+  
+  func startReadingOutput() {
+    
+    let outputHandler = m.outputPipe.fileHandleForReading
+    outputHandler.readabilityHandler = { pipe in
+      if let output = String(data: pipe.availableData, encoding: .utf8) {
+        // Update the output text on the main thread
+        DispatchQueue.main.async {
+          outputText += output
+        }
+      }
+    }
+    
+    let errorHandler = m.errorPipe.fileHandleForReading
+    errorHandler.readabilityHandler = { pipe in
+      if let output = String(data: pipe.availableData, encoding: .utf8) {
+        // Update the output text on the main thread
+        DispatchQueue.main.async {
+          errorText += output
+        }
+      }
+    }
+
   }
   
 }

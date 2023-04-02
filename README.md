@@ -3,10 +3,12 @@
 WebR's Console REPL Running locallly in a macOS SwiftUI app thanks to [goserve](https://pkg.go.dev/github.com/johnsto/goserve).
 
 - `webr/` is just the files from the official distribution
-- `goserve-macos` is a universal macOS compile of `goserve`
-- `goserve.conf` has the CORS header config for ^^
 - `macoswasmrApp.swift` is just boilerplate SwitfUI 
 - `ContentView.swift` should really be broken up into multiple files and contains the views, controller, and `goserve-macos`' background process laucher 
+
+## Installation
+
+You can build this from source or check the GH releases for a notarized app zip.
 
 ## Addendum
 

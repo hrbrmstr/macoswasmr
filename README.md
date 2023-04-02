@@ -1,5 +1,7 @@
 #  macoswasmr
 
+![preview](img/preview.png)
+
 WebR's Console REPL Running locallly in a macOS SwiftUI app thanks to [goserve](https://pkg.go.dev/github.com/johnsto/goserve).
 
 - `webr/` is just the files from the official distribution
